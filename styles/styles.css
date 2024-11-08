@@ -1,0 +1,52 @@
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.assignments {
+  max-width: 90%;
+  margin: 50px auto;
+}
+.assignments h1 {
+  color: orangered;
+}
+.assignments__assignment1, .assignments__assignment2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  line-height: 1.875rem;
+  margin: 1.25rem 0px;
+}
+.assignments__assignment1__question, .assignments__assignment2__question {
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  text-transform: capitalize;
+}
+.assignments__assignment1__title, .assignments__assignment2__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.assignments__lists {
+  list-style: number;
+  padding-left: 1.25rem;
+}
+.assignments h2 {
+  font-size: 1.5rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+.assignments a {
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.assignments a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

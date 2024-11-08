@@ -1,0 +1,39 @@
+@mixin layout($columns, $height, $width) {
+  border: 1px solid lightgrey;
+  display: grid;
+  margin: 100px auto;
+  grid-template-columns: repeat($columns, 1fr);
+
+  border-radius: 8px;
+  height: $height;
+  width: $width;
+  overflow: hidden;
+
+  &__media {
+    height: 100%;
+    overflow: hidden;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      overflow: hidden;
+    }
+  }
+
+  &__content {
+    padding: 20px 40px;
+  }
+}
+
+.card {
+  @include layout(1, 350px, 100%);
+
+  & {
+    @media screen and (min-width: 768px) {
+      @include layout(2, 450px, 700px);
+    }
+  }
+}

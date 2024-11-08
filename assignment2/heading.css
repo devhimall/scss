@@ -1,0 +1,79 @@
+.assignments {
+  width: 90%;
+  margin: auto;
+}
+.assignments__assignment2 .assignment2__question {
+  color: black;
+}
+.assignments__assignment2 h1 {
+  font-size: 32px;
+  line-height: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h1 {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}
+.assignments__assignment2 h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}
+.assignments__assignment2 h3 {
+  font-size: 20px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h3 {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}
+.assignments__assignment2 h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h4 {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}
+.assignments__assignment2 h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h5 {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}
+.assignments__assignment2 h6 {
+  font-size: 12px;
+  line-height: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .assignments__assignment2 h6 {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: blue;
+  }
+}/*# sourceMappingURL=heading.css.map */

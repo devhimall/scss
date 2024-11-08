@@ -1,0 +1,64 @@
+// $spaces: (1, 2, 3, 4);
+// $sides: (top, bottom, left, right);
+// @each $space in $spaces {
+//   $pixels: $space * 4;
+//   .m-#{$space} {
+//     margin: #{$pixels}px;
+//   }
+//   .p-#{$space} {
+//     padding: #{$pixels}px;
+//   }
+//   @each $side in $sides {
+//     .m-#{str-slice($side, 0, 1)}-#{$space} {
+//       margin-#{$side}: #{$pixels}px;
+//     }
+//     .p-#{str-slice($side, 0, 1)}-#{$space} {
+//       padding-#{$side}: #{$pixels}px;
+//     }
+//   }
+// }
+
+$spacing: 0, 15, 20, 30, 40;
+$unit: px;
+
+$directions: (
+  l: left,
+  t: top,
+  r: right,
+  b: bottom,
+  v: top,
+  h: left,
+);
+
+// function to set the value of font-size
+@function get-spacing($value) {
+  @return $value + $unit;
+}
+
+// mixin to generate all direction spacing like top, bottom, left, and right
+@mixin generate-spacing($properties, $short) {
+  @each $space in $spacing {
+    .#{$short}a-#{$space} {
+      #{$properties}: get-spacing($space);
+    }
+
+    @each $key, $value in $directions {
+      .#{$short}#{$key}-#{$space} {
+        #{$properties}-#{$value}: get-spacing($space);
+
+        @if #{$key} == v {
+          #{$properties}-bottom: get-spacing($space);
+        }
+
+        @if #{$key} == h {
+          #{$properties}-right: get-spacing($space);
+        }
+      }
+    }
+  }
+}
+
+// calling the mixin
+
+@include generate-spacing(padding, p);
+@include generate-spacing(margin, m);

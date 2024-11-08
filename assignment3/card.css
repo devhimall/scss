@@ -1,0 +1,56 @@
+.card {
+  border: 1px solid lightgrey;
+  display: grid;
+  margin: 100px auto;
+  grid-template-columns: repeat(1, 1fr);
+  border-radius: 8px;
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+}
+.card__media {
+  height: 100%;
+  overflow: hidden;
+  overflow: hidden;
+}
+.card__media img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  overflow: hidden;
+}
+.card__content {
+  padding: 20px 40px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    border: 1px solid lightgrey;
+    display: grid;
+    margin: 100px auto;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    height: 450px;
+    width: 700px;
+    overflow: hidden;
+  }
+  .card__media {
+    height: 100%;
+    overflow: hidden;
+    overflow: hidden;
+  }
+  .card__media img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    overflow: hidden;
+  }
+  .card__content {
+    padding: 20px 40px;
+  }
+}/*# sourceMappingURL=card.css.map */
